@@ -1,0 +1,24 @@
+{
+  "targets": ["defaults"],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "usage",
+        "corejs": "3.6.5"
+      }
+    ],
+    [
+        "@babel/preset-react",
+        {}
+    ],
+    [
+        "@babel/preset-typescript",
+        {
+            "isTSX": true,
+            "allExtensions": true
+        }
+    ]
+  ],
+  "plugins": ["react-refresh/babel"]
+}
